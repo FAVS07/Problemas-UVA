@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+void recibe(int a, int b){
+       
+        if(a == b){
+            cout << "="<< endl;
+            
+        }else if(a > b){
+             cout << ">"<< endl;
+        }else{
+            cout << "<"<< endl;
+        }
+}
+int main()
+{
+    int casos;
+    int a;
+    int b;
+    
+    cin >> casos;
+    for (int i=0 ; i< casos;i++) {
+        cin>> a;
+        cin>> b;
+        recibe(a,b);
+    }
+
+    return 0;
+}
